@@ -4,10 +4,10 @@ x = re.findall(r"[0-9]+",x)
 x = [int(x) for x in x]
 a = x.pop(0)
 end = []
-for _ in range(a+1):
+for _ in range(a):
     one = x.pop(0)
     two = x.pop(0)
-    if one > tw
+    if one > two:
         p = math.gcd(one, two)
         q = int((two * one) / p)
         print(f"({p} {q})")  
